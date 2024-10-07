@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #დავალება 1
 name = input( "enter your name: ")
 last_name = input("enter your last name: ") 
@@ -35,10 +34,9 @@ lastname = input("enter your lastname: ")
 print(lastname)
 age = input("enter your age: ")
 print(age)
-=======
+
 name = input( "enter your name: ")
 last_name = input("enter your last name: ") 
 age = input("enter your age: ")
 
 print("hello",name)
->>>>>>> e28580543eb9b8bcbf49847df1113c3280420e4e
