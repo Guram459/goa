@@ -38,3 +38,4 @@ def count_positives_sum_negatives(arr):
             sum_negatives += num
     
     return [count_positives, sum_negatives]
+
