@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/potos/lion.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+h1{
+    color: chartreuse;
+}
+p{
+    color: rgb(0, 255, 34);
+    text-align: left;
+    text-shadow: 10cm;
+    font-size: 19px;
+    margin-right: 60%;
+}
