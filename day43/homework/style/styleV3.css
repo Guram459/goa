@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/potos/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    background-color: rgb(103, 105, 100);
+    width: 300px;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 30px;
+    margin-left: 40%;
+    box-shadow: rgba(10, 255, 222, 0.15) 1.95px 195px 2.6;
+    border: 1px double black;
+}
+h1{
+    text-align: center;
+}
