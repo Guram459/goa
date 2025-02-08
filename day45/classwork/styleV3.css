@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 3px solid;
+}
+
+.top-left {
+    background-color: orange;
+    border-color: orange;
+}
+
+.top-right {
+    background-color: orange;
+    border-color: orange;
+}
+
+.bottom-left {
+    background-color: green;
+    border-color: green;
+}
+
+.bottom-right {
+    background-color: green;
+    border-color: green;
+}

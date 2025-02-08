@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    gap: 10px;
+}
+.div-1{
+    border: 5px solid red;
+    background-color: aqua;
+    width: 150px;
+}
+.div-2{
+    border: 5px solid red;
+    background-color: aqua;
+    width: 150px;
+}
