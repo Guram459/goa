@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222; 
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 200px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid cyan;
+    background-color: transparent;
+}
