@@ -1,0 +1,95 @@
+@import url("reset.css");
+
+@font-face {
+    font-family: "inc_bold";
+    src: url("./../assets/fonts/static/Inconsolata-Bold.ttf");
+}
+@font-face {
+    font-family: "inc_regular";
+    src: url("./../assets/fonts/static/Inconsolata-Regular.ttf");
+}
+label,input{
+    display: block;
+}
+body{
+    background-image: url(./../assets/images/background-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.logo{
+    margin-left: 40%;
+    margin-top: 2%;
+}
+  
+.form_title{
+    color: hsl(252, 6%, 83%);
+    text-align: center;
+    font-family: "inc_bold";
+    margin-top: 3%;
+    font-size: 35px;
+}
+.other-title{
+    color: hsl(252, 6%, 83%);
+    text-align: center;
+    font-family: "inc_regular";
+    margin-bottom: 0%; 
+    font-size: 35px;
+}
+.little-title{
+    color: hsl(245, 15%, 58%);
+    font-family: "inc_regular";
+    text-align: center;
+    margin-top: 3%;
+}
+
+.Avatar{
+    border-radius: 6%;
+    border: 2px dashed black;
+    width: 350px;
+    height: 110px;
+    margin-left: 35%;
+    outline: 0;
+}
+label{
+    text-align: center;
+    margin-block: 20px;
+    margin-right: 20%;
+    color: rgba(244, 235, 235, 0.769);
+}
+.Avatar::placeholder{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 48%;
+}
+.input-files{
+    margin-left: 35%;
+    width: 350px;
+    height: 40px;
+    border-radius: 10%;
+    outline: 0;
+    background-color: hsla(0, 0%, 100%, 0.71);
+    transition: background-color 0.8s ease;
+}
+.input-files:hover{
+    background-color: hsla(245, 13%, 66%, 0.628);
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gen{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 35%;
+    width: 350px;
+    height: 40px;
+    border-radius: 10%;
+    outline: 0;
+    background-color: hsl(7, 89%, 68%);
+}
