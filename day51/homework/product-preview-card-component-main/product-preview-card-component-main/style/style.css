@@ -1,0 +1,67 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+body{
+    background-color: hsl(26, 40%, 92%);
+    display: flex;
+}
+
+.container{
+    background-image: url(./../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 35%;
+    margin-top: 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 380px;
+    width: 500px;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+    margin-left: 58%;
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+h2{
+    margin-left: 58%;
+    font-size: 30px;
+    font-family: "Fraunces", serif;
+    margin-top: 3%;
+}
+
+p{
+    margin-left: 58%;
+    margin-top: 4%;
+}
+
+h3{
+    margin-left: 58%;
+    font-size: 25px;
+    color: hsl(158, 42%, 18%);
+    margin-top: 6%;
+}
+
+h3 strong{
+    font-size: 10px;
+    margin-left: 13%;
+    text-decoration: line-through;
+
+}
+
+.cart{
+    border-radius: 10px;
+    width: 40%;
+    height: 10%;
+    margin-left: 58%;
+    margin-top: 6%;
+    background-color: hsl(156, 42%, 18%);
+    color: white;
+    background-image: url(./../images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 15%;
+}
