@@ -1,0 +1,26 @@
+@import url(./reset.css);
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: 
+                    url(./../images/logo.svg),
+                    url(./../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left 10%;
+    margin-top: 10%;
+    margin-right: 40%;
+    background-color: hsl(256, 40%, 49%);
+}
+
+.img-1{
+    margin-right: 40%;
+    margin-top: 10%;
+}
+
+.img-2{
+    margin-top: 3%;
+    margin-right: 40%;
+    
+}

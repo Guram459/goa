@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    background-color: hsl(228, 11%, 9%);
     display: flex;
     flex-direction: row;
+    background-color: hsl(228, 11%, 9%);
 }
 
 .container{
@@ -22,7 +22,6 @@ body{
 .img-1{
     margin-left: 10%;
     margin-top: 20px;
-    border: 1px solid;
     border-radius: 30px;
     background-color: hsl(217, 20%, 18%);
     background-size: 10%;
@@ -32,7 +31,7 @@ body{
 
 img{
     margin-left: 17px;
-    margin-top: 15px;
+    margin-top: 17px;
 }
 
 h1{
@@ -73,7 +72,7 @@ p{
     color: white;
     font-size: 18px;
     cursor: pointer;
-    
+    transition: all 300ms ease;
   }
   
   .circle:hover {
@@ -95,5 +94,7 @@ p{
     width: 80%;
     height: 40px;
     margin-left: 10%;
-    color: #333;
+    color: #000000;
+    background-color: hsl(25, 97%, 53%);
+    letter-spacing: 4px;
 }

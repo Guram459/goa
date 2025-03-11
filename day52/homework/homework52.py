@@ -18,16 +18,13 @@ def string_clean(s):
     return ''.join([char for char in s if not char.isdigit()])
 
 # homework 4
-def remove_consecutive_duplicates(s: str) -> str:
-    result = []
-    prev_char = None
-
-    for char in s:
-        if char != prev_char:
-            result.append(char)
-            prev_char = char
-    
-    return ''.join(result)
+def remove_consecutive_duplicates(s):
+    splied_words = s.split(" ")
+    result_arr = []
+    for i in range(len(splied_words)):
+        if (splied_words[i] != splied_words[i-1]) or (i == 0):
+            result_arr.append(splied_words[i])
+    return " ".join(result_arr)
 
 # homework 5
 def between_extremes(arr):
