@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Commissioner", sans-serif;
+    background-color: #fafafa;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.35) 90%), url("./../images/image-hero-desktop.jpg") no-repeat;
+    height: 400px;
+    padding-top: 52px;
+    padding-inline: 165px;
+}
+
+header a {
+    color: white;
+    font-size: 14px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.card {
+    text-align: center;
+    max-width: 720px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    background-color: white;
+    height: 300px;
+}
+
+.img-container {
+    text-align: center;
+    margin-top: -51px;
+}
+
+#hero {
+    margin-top: -100px;
+}
+
+h2{
+    color: hsl(0, 0, 0);
+    margin-top: 20px;
+}
+
+.p-1{
+   margin-top: 15px; 
+   font-weight: 200;
+   color: hsl(0, 0%, 48%);
+}
+
+.p-11{
+    color: azure;
+}
+
+
+.pro{
+    transition: all 300ms ease-out;
+    line-height: 58px;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 25px ;
+    width: 170px;
+    height: 60px;
+}
+
+.pro:hover{
+    background-color: rgb(227, 198, 161);
+}
+
+.img-1{
+    border-radius: 15px;
+    display: flex;
+    background-color: hsl(0, 0%, 96%);
+    margin-left: 185%;
+    margin-top: 30%;
+    height: 50%;
+}
+
+.book{
+    flex-direction: row;
+    display: flex;
+    border-radius: 15px;
+    
+}
+
+.line{
+    display: flex;
+}
+
+.p-2{
+    border-radius: 15px;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 54%;
+}
+
+.ui-bookmark {
+    margin-left: 350%;
+    margin-top: 50%;
+    --icon-size: 24px;
+    --icon-secondary-color: rgb(77, 77, 77);
+    --icon-hover-color: rgb(97, 97, 97);
+    --icon-primary-color: gold;
+    --icon-circle-border: 1px solid var(--icon-primary-color);
+    --icon-circle-size: 35px;
+    --icon-anmt-duration: 0.3s;
+  }
+  
+  .ui-bookmark input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+  }
+  
+  .ui-bookmark .bookmark {
+    width: var(--icon-size);
+    height: auto;
+    fill: var(--icon-secondary-color);
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+  }
+  
+  .bookmark::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    -webkit-box-shadow: 0 30px 0 -4px var(--icon-primary-color),
+      30px 0 0 -4px var(--icon-primary-color),
+      0 -30px 0 -4px var(--icon-primary-color),
+      -30px 0 0 -4px var(--icon-primary-color),
+      -22px 22px 0 -4px var(--icon-primary-color),
+      -22px -22px 0 -4px var(--icon-primary-color),
+      22px -22px 0 -4px var(--icon-primary-color),
+      22px 22px 0 -4px var(--icon-primary-color);
+    box-shadow: 0 30px 0 -4px var(--icon-primary-color),
+      30px 0 0 -4px var(--icon-primary-color),
+      0 -30px 0 -4px var(--icon-primary-color),
+      -30px 0 0 -4px var(--icon-primary-color),
+      -22px 22px 0 -4px var(--icon-primary-color),
+      -22px -22px 0 -4px var(--icon-primary-color),
+      22px -22px 0 -4px var(--icon-primary-color),
+      22px 22px 0 -4px var(--icon-primary-color);
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  
+  .bookmark::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: var(--icon-circle-border);
+    opacity: 0;
+  }
+  
+  /* actions */
+  
+  .ui-bookmark:hover .bookmark {
+    fill: var(--icon-hover-color);
+  }
+  
+  .ui-bookmark input:checked + .bookmark::after {
+    -webkit-animation: circles var(--icon-anmt-duration)
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    animation: circles var(--icon-anmt-duration)
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    -webkit-animation-delay: var(--icon-anmt-duration);
+    animation-delay: var(--icon-anmt-duration);
+  }
+  
+  .ui-bookmark input:checked + .bookmark {
+    fill: var(--icon-primary-color);
+    -webkit-animation: bookmark var(--icon-anmt-duration) forwards;
+    animation: bookmark var(--icon-anmt-duration) forwards;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  
+  .ui-bookmark input:checked + .bookmark::before {
+    -webkit-animation: circle var(--icon-anmt-duration)
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    animation: circle var(--icon-anmt-duration)
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    -webkit-animation-delay: var(--icon-anmt-duration);
+    animation-delay: var(--icon-anmt-duration);
+  }
+  
+  @-webkit-keyframes bookmark {
+    50% {
+      -webkit-transform: scaleY(0.6);
+      transform: scaleY(0.6);
+    }
+  
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+    }
+  }
+  
+  @keyframes bookmark {
+    50% {
+      -webkit-transform: scaleY(0.6);
+      transform: scaleY(0.6);
+    }
+  
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+    }
+  }
+  
+  @-webkit-keyframes circle {
+    from {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  
+    90% {
+      width: var(--icon-circle-size);
+      height: var(--icon-circle-size);
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes circle {
+    from {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  
+    90% {
+      width: var(--icon-circle-size);
+      height: var(--icon-circle-size);
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes circles {
+    from {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+  
+    40% {
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes circles {
+    from {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+  
+    40% {
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0;
+    }
+  }
+
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+
+  .stat-block {
+    flex: 1;
+  }
+
+  .stat-block h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .stat-block p {
+    margin: 5px 0 0;
+    color: gray;
+    font-size: 14px;
+  }
+
+  .progress-bar-bg {
+    height: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .progress-bar-fill {
+    height: 8px;
+    background-color: #3CBEB1;
+    border-radius: 4px;
+    width: 0%;
+    transition: width 0.5s ease;
+  }
+
+  .stat{
+    text-align: center;
+    max-width: 720px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-left: 26%;
+    height: 150px;
+    width: 720px;
+    background-color: #fff;
+    margin-top: 30px;
+    line-height: 30px;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, 0.02);
+  }
+
+  .card-3{
+    text-align: center;
+    max-width: 720px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 15px;
+    max-width: 720px;
+    height: 1300px;
+    background-color: #fff;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, 0.02);
+    margin-left: 26%;
+  }
+
+  .h-2{
+    color: hsl(0, 0%, 0%);
+    margin-left: 5%;
+    margin-top: 6%;
+  }
+
+  .p-10{
+    color: hsl(0, 0%, 48%);
+    margin-top: 5%;
+    max-width: 620px;
+    margin-left: 5%;
+  }
+
+  .p-5{
+    color:  hsl(0, 0%, 48%);
+    margin-left: 5%;
+    margin-top: 7%;
+    max-width: 680px;
+    margin-bottom: 200px;
+  }
+
+  .bamboo{
+    margin-bottom: 600px;
+    justify-self: center;
+    border-radius: 15px;
+    width: 650px;
+    height: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2.5px 0.5px rgba(27, 14, 14, 0.225);
+  }
+
+  .title-1{
+    display: flex;
+  }
+
+  .bam{
+    margin-left: 5%;
+  }
+
+  .pie{
+    color: #3CBEB1;
+    margin-left: 39%;
+    margin-top: 30px;
+  }
+
+  .bambo-p{
+    margin-left: 5%;
+    margin-top: 40px;
+    color:  hsl(0, 0%, 48%);
+  }
+
+  .s101{
+    margin-left: 5%;
+    line-height: 110px;
+    font-size: 35px;
+  }
+
+  .left{
+    margin-top: 40px;
+    color:  hsl(0, 0%, 48%);
+  }
+
+  .ti-lene{
+    display: flex;
+  }
+
+  .pro-1{
+    text-align: center;
+    transition: all 300ms ease-out;
+    line-height: 58px;
+    margin-left: 50%;
+    margin-top: 5%;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 25px ;
+    width: 170px;
+    height: 60px;
+  }
+
+  .pro-1:hover{
+    background-color: rgb(227, 198, 161);
+}
+
+.black{
+    margin-bottom: 600px;
+    justify-self: center;
+    border-radius: 15px;
+    width: 650px;
+    height: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2.5px 0.5px rgba(27, 14, 14, 0.225);
+}
+
+.pie-1{
+    margin-left: 30%;
+    margin-top: 4%;
+    color: #3CBEB1;
+}
+
+.bamboo{
+    /* ... other styles ... */
+    margin-bottom: 20px; /* Example: Reduce the bottom margin */
+}
+
+.black{
+    /* ... other styles ... */
+    margin-top: 0; /* Ensure there's no extra top margin on the second div */
+    margin-bottom: 20px; /* You might want some spacing below the second one */
+}
+
+.mah{
+    margin-bottom: 600px;
+    justify-self: center;
+    border-radius: 15px;
+    width: 650px;
+    height: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2.5px 0.5px rgba(27, 14, 14, 0.225);
+}
+
+.mah-1{
+    margin-left: 5%;
+    max-width: 920px;
+    font-size: 20px;
+}
+
+.maha-1{
+    margin-left: 25%;
+    margin-top: 4%;
+    color: #3CBEB1;
+}

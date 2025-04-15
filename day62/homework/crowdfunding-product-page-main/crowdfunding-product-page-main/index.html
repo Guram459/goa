@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Frontend Mentor | Crowdfunding product page</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet :thumbsup: -->
+</head>
+
+<body>
+  <header class="container">
+    <img src="./images/logo.svg" alt="Image logo">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#discover">Discover</a></li>
+      <li><a href="#getStarted">Get Started</a></li>
+    </ul>
+  </header>
+  <section class="card" id="hero">
+    <div class="img-container">
+      <img src="./images/logo-mastercraft.svg" alt="">
+    </div>
+    <h2>Mastercraft Bamboo Monitor Rise</h2>
+    <p class="p-1">A beautiful & handcrafted monitor stand to reduce neck and eye strain</p>
+    <div class="line">
+      <div class="pro">
+        <p class="p-11"><a href="">Back this project</a></p>
+      </div>
+      <div class="book">
+        <label class="ui-bookmark">
+          <input type="checkbox">
+          <div class="bookmark">
+            <svg viewBox="0 0 32 32">
+              <g>
+                <path
+                  d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z">
+                </path>
+              </g>
+            </svg>
+          </div>
+        </label>
+        <p class="p-2">bookmark</p>
+      </div>
+    </div>
+  </section>
+  <div class="stat">
+    <div class="stats-container">
+      <div class="stat-block">
+        <h2 id="amount-funded">$0</h2>
+        <p>of $100,000 backed</p>
+      </div>
+      <div class="stat-block">
+        <h2 id="backers">0</h2>
+        <p>total backers</p>
+      </div>
+      <div class="stat-block">
+        <h2 id="days-left">0</h2>
+        <p>days left</p>
+      </div>
+    </div>
+
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progress-bar"></div>
+    </div>
+  </div>
+  <section class="card-3" id="">
+    <h2 class="h-2">about this project</h2>
+    <p class="p-10">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a
+      more
+      comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make
+      you more comfortable while at work, helping you stay focused on the task at hand.
+    </p>
+    <p class="p-5">Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your
+      computer to allow
+      notepads, pens, and USB sticks to be stored under the stand.</p>
+    <div class="bamboo">
+      <div class="title-1">
+        <h2 class="bam">Bamboo Stands</h2>
+        <p class="pie">Piedge $25 or more</p>
+      </div>
+      <p class="bambo-p">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional
+        campaign, and you'll
+        be added to a special Backer member list</p>
+      <div class="ti-lene">
+        <strong class="s101">101</strong>
+        <p class="left">left</p>
+        <div class="pro-1">
+          <p class="p-11"><a href="">Select Reward</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="black">
+      <div class="title-1">
+        <h2 class="bam">black Edition Stand</h2>
+        <p class="pie-1">Piedge $75 or more</p>
+      </div>
+      <p class="bambo-p">You get a Black Special Edition computer stand and a personal thank you. You'll be added to our
+        Backer member list. Shipping is included</p>
+      <div class="ti-lene">
+        <strong class="s101">101</strong>
+        <p class="left">left</p>
+        <div class="pro-1">
+          <p class="p-11"><a href="">Select Reward</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="mah">
+      <div class="title-1">
+        <h2 class="mah-1">Mahogany Speacial Edition</h2>
+        <p class="maha-1">Piedge $200 or more</p>
+      </div>
+      <p class="bambo-p">You get a Black Special Edition computer stand and a personal thank you. You'll be added to our
+        Backer member list. Shipping is included</p>
+      <div class="ti-lene">
+        <strong class="s101">101</strong>
+        <p class="left">left</p>
+        <div class="pro-1">
+          <p class="p-11"><a href="">Select Reward</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    // Example data (you can fetch these dynamically later)
+    const currentAmount = 89914;
+    const goalAmount = 100000;
+    const backers = 5007;
+    const daysLeft = 56;
+
+    // Update DOM
+    document.getElementById('amount-funded').textContent = `$${currentAmount.toLocaleString()}`;
+    document.getElementById('backers').textContent = backers.toLocaleString();
+    document.getElementById('days-left').textContent = daysLeft;
+
+    // Update progress bar
+    const percentage = (currentAmount / goalAmount) * 100;
+    document.getElementById('progress-bar').style.width = `${percentage}%`;
+  </script>
+</body>
+
+</html>
