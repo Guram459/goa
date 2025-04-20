@@ -48,9 +48,6 @@ class Human1:
         self.name = name
         self.surname = surname
         self.age = age
-
-    def __str__(self, name, surname, age):
-        return f"{self.name} {self.surname} {self.age}"
     
     def my_name(self):
         return f" მე მქვია {self.name}"
