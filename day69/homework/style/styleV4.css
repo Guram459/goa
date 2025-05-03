@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins" sans-serif;
+    justify-items: center;
+    background-color: rgb(76, 76, 102);
+}
+
+.back{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.back:hover{
+    background-color: rgb(104, 136, 126);
+    transform: scale(1.1);
+    transition: 1s;
+}

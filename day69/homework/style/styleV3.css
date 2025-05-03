@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+@media (max-width: 768px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
