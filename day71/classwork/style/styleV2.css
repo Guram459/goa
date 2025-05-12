@@ -1,0 +1,38 @@
+body{
+  background: white;
+  height: 200vh;
+}
+
+.grid-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card img {
+  width: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card .info-tag{
+  top: 10px;
+  color: white;
+  left: 140px;
+  border-radius: 15px;
+  background-color: grey;
+}
+
+.p-1{
+  background-color: green;
+  border-radius: 15px;
+  text-align: center;
+  width: 100px;
+  margin-left: 46.9%;
+}
+
+.sticky-container{
+  position: sticky;
+  top: 0;
+
+}
