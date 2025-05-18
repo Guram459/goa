@@ -1,0 +1,83 @@
+@import url(./reset.css);
+
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+.margin-center{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header{
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: white;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 21px;
+    position: relative;
+    font-size: 18px;
+}
+
+.bg-blur{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(97, 97, 97, 0.5);
+    top: -20px;
+    right: 0;
+    left: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+span{
+    margin-top: -18px; 
+}
+
+header ul{
+    display: flex;
+    gap: 50px;
+    margin-top: -20px;
+}
+
+#home video{
+    width: 100%;
+    height: 108vh;
+    margin-top: -17px;
+    scale: 1s;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#about{
+    padding: 20px;
+    color: white;
+}
+
+h1{
+    position: relative;
+    top: 80%;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+h2{
+    font-size: 30px;
+}
