@@ -1,0 +1,31 @@
+:root{
+    --primary: #e2e2e2;
+    --primary-10: #e2e2e2;
+    --primary-20: #e2e2e2;
+    --primary-30: #e2e2e2;
+    --primary-40: #e2e2e2;
+    --primary-50: #e2e2e2;
+    --primary-60: #e2e2e2;
+    --primary-70: #e2e2e2;
+    --primary-80: #e2e2e2;
+    --primary-90: #e2e2e2;
+
+    --dark-mode-50: #6fe0e8;
+    --dark-mode-100: #870000;
+}
+
+.primary-btn{
+    background-color:  var( --dark-mode-50);
+    color: var(--primary);
+    border: none;
+    border-radius: 10px;
+}
+
+.dark {
+    --primary: black;
+    --btn-color: rgb(228, 10, 232);
+}
+
+body{
+    background-color: var(--primary);
+}
