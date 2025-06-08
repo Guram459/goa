@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      margin: 20px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box" onmouseover="this.style.backgroundColor='orange'" 
+                onmouseout="this.style.backgroundColor='lightblue'">
+  Hover over me
+</div>
+
+<div class="box" onmouseover="this.style.backgroundColor='green'" 
+                onmouseout="this.style.backgroundColor='lightblue'">
+  Hover over me too
+</div>
+
+
+<button 
+  onmousedown="this.style.backgroundColor='red'" 
+  onmouseup="this.style.backgroundColor='green'">
+  Click me
+</button>
+
+</body>
+</html>
