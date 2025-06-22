@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To do List</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bla {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            min-height: 100px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <h2>To Do List</h2>
+    <input type="text" id="todoInput" placeholder="Enter task">
+    <button onclick="addTodo()">Add</button>
+    <button onclick="resetTodos()">Reset</button>
+
+    <div class="bla" id="todoContainer"></div>
+
+    <script>
+        function addTodo() {
+            const input = document.getElementById('todoInput');
+            const value = input.value.trim();
+            const container = document.getElementById('todoContainer');
+            const item = document.createElement('div');
+            item.className = 'todo-item';
+            item.textContent = value;
+            container.appendChild(item);
+            input.value = '';
+        }
+
+        function resetTodos() {
+            const container = document.getElementById('todoContainer');
+            container.innerHTML = '';
+        }
+    </script>
+
+</body>
+
+</html>

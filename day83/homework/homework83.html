@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-4 text-center">To-Do List</h1>
+
+    <div class="flex mb-4">
+      <input id="taskInput" type="text" placeholder="შეიყვანე დავალება..."
+             class="flex-grow px-4 py-2 border rounded-l focus:outline-none">
+      <button onclick="addTask()"
+              class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600">
+        დამატება
+      </button>
+    </div>
+
+    <ul id="taskList" class="space-y-2">
+      <!-- დავალებები გამოჩნდება აქ -->
+    </ul>
+  </div>
+
+  <script>
+    let tasks = [];
+
+    function renderTasks() {
+      const taskList = document.getElementById('taskList');
+      taskList.innerHTML = '';
+
+      tasks.forEach((task, index) => {
+        const li = document.createElement('li');
+        li.className = 'flex items-center justify-between p-2 border rounded';
+
+        const label = document.createElement('label');
+        label.className = 'flex items-center space-x-2';
+        
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = task.completed;
+        checkbox.onchange = () => toggleTask(index);
+
+        const span = document.createElement('span');
+        span.textContent = task.text;
+        if (task.completed) {
+          span.classList.add('line-through', 'text-gray-500');
+        }
+
+        label.appendChild(checkbox);
+        label.appendChild(span);
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'წაშლა';
+        deleteBtn.className = 'text-red-500 hover:underline text-sm';
+        deleteBtn.onclick = () => deleteTask(index);
+
+        li.appendChild(label);
+        li.appendChild(deleteBtn);
+        taskList.appendChild(li);
+      });
+    }
+
+    function addTask() {
+      const taskInput = document.getElementById('taskInput');
+      const text = taskInput.value.trim();
+      if (text !== '') {
+        tasks.push({ text, completed: false });
+        taskInput.value = '';
+        renderTasks();
+      }
+    }
+
+    function toggleTask(index) {
+      tasks[index].completed = !tasks[index].completed;
+      renderTasks();
+    }
+
+    function deleteTask(index) {
+      tasks.splice(index, 1);
+      renderTasks();
+    }
+
+    renderTasks();
+  </script>
+</body>
+</html>
