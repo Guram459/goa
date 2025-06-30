@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // homework 1
+
+        let greeting = "Hello World!";
+        let newGreeting = `The message is: ${greeting}`;
+        let variableNameAsText = "greeting";
+
+        console.log(greeting);
+        console.log(newGreeting);
+        console.log(variableNameAsText);
+
+        // homework 2
+
+        let month = prompt("შეიყვანე შენი საყვარელი თვე (იანვარი, აპრილი, ივლისი, სექტემბერი, დეკემბერი)");
+
+        let season;
+
+        switch (month.toLowerCase()) {
+            case "იანვარი":
+                season = "ზამთარი";
+                break;
+            case "აპრილი":
+                season = "გაზაფხული";
+                break;
+            case "ივლისი":
+                season = "ზაფხული";
+                break;
+            case "სექტემბერი":
+                season = "შემოდგომა";
+                break;
+            case "დეკემბერი":
+                season = "ზამთარი";
+                break;
+            default:
+                season = "უცნობი თვე ან არასწორი შეყვანა";
+        }
+
+        alert(`სეზონი: ${season}`);
+
+        // homework 3
+
+        let age = 16;
+
+        console.log( age >= 18 ? "you are not adult":"you are adult")
+
+
+
+    </script>
+</body>
+
+</html>

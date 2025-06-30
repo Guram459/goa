@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2>ინფორმაცია დღევანდელი თარიღიდან:</h2>
+  <p id="info"></p>
+
+  <script>
+    const now = new Date();
+
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1; 
+    const day = now.getDate();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+
+    const text = `წელი: ${year}, თვე: ${month}, დღე: ${day}, საათი: ${hour}:${minute < 10 ? '0' + minute : minute}`;
+
+    document.getElementById('info').innerText = text;
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+

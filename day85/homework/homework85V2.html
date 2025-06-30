@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: aqua;
+    }
+
+    .t1{
+        background-color: aquamarine;
+        justify-self: center;
+        width: 600px;
+        height: 150px;
+        text-align: center;
+        line-height: 370%;
+        border-radius: 15px;
+        margin-top: 15%;
+    }
+</style>
+
+<body>
+    <div class="t1">
+        <h2>ინფორმაცია დღევანდელი თარიღიდან:</h2>
+        <p id="info"></p>
+    </div>
+    <script>
+
+        // homework 3
+
+        let age = 16;
+
+        console.log(age >= 18 ? "you are adult" : "you are not adult")
+
+        // homework 4
+
+        const now = new Date();
+
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+
+        const text = `წელი: ${year}, თვე: ${month}, დღე: ${day}, საათი: ${hour}:${minute < 10 ? '0' + minute : minute}`;
+
+        document.getElementById('info').innerText = text;
+
+        // homework 5
+
+        
+    </script>
+</body>
+
+</html>

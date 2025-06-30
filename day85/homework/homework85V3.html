@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown-ები</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .countdown {
+            margin-bottom: 20px;
+            font-size: 18px;
+            justify-self: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>დარჩენილი დრო:</h1>
+
+    <div class="countdown" id="newYear">ახალი წელი: ითვლება...</div>
+    <div class="countdown" id="giorgoba">გიორგობა: ითვლება...</div>
+    <div class="countdown" id="barbaroba">ბარბარობა: ითვლება...</div>
+
+    <script>
+        function getCountdown(targetDate) {
+            const now = new Date();
+            const diff = targetDate - now;
+
+           
+            const seconds = Math.floor(diff / 1000) % 60;
+            const minutes = Math.floor(diff / (1000 * 60)) % 60;
+            const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+            return `${days} დღე, ${hours} საათი, ${minutes} წუთი, ${seconds} წამი`;
+        }
+
+        const newYear = new Date("2025-01-01T00:00:00");
+        const giorgoba = new Date("2025-11-23T00:00:00");
+        const barbaroba = new Date("2025-12-17T00:00:00");
+
+        function updateCountdowns() {
+            document.getElementById("newYear").textContent = "ახალი წელი: " + getCountdown(newYear);
+            document.getElementById("giorgoba").textContent = "გიორგობა: " + getCountdown(giorgoba);
+            document.getElementById("barbaroba").textContent = "ბარბარობა: " + getCountdown(barbaroba);
+        }
+
+        updateCountdowns();
+        setInterval(updateCountdowns, 1000);
+    </script>
+
+</body>
+
+</html>
